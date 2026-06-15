@@ -10,11 +10,11 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-6">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-20">
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-            <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-4">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-4">
               Hi, I'm{" "}
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               MD. Shakibul Islam Tamim
@@ -53,7 +53,7 @@ const Hero = () => {
 
           <div className={`flex justify-center transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
             <div className="relative">
-              <div className="w-80 h-80 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 p-1 animate-pulse">
+              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 p-1 animate-pulse">
                 <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center overflow-hidden">
                   <img
                     src="images/Tamim.jpg"

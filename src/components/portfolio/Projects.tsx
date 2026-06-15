@@ -59,14 +59,14 @@ const Projects = () => {
     : projects.filter(project => project.category === filter);
 
   return (
-    <section id="projects" className="py-20 px-6">
+    <section id="projects" className="py-16 md:py-20">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gray-100 dark:bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 mb-4">
             <FolderGit2 className="text-purple-400" size={20} />
             <span className="text-gray-800 dark:text-white font-medium">Projects</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             Featured Projects
           </h2>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-8">
@@ -120,7 +120,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-2 pt-2 border-t border-gray-100 dark:border-white/10">
+                <div className="flex flex-col sm:flex-row gap-2 pt-2 border-t border-gray-100 dark:border-white/10">
                   <a
                     href={project.githubUrl}
                     className="flex-1 text-center px-4 py-2 bg-purple-100 dark:bg-purple-500/20 border border-purple-300 dark:border-purple-500/30 text-purple-700 dark:text-purple-300 rounded-lg font-medium hover:bg-purple-200 dark:hover:bg-purple-500/30 transition-colors text-sm"

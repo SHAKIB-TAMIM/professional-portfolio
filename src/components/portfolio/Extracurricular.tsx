@@ -18,14 +18,14 @@ const Extracurricular = () => {
   ];
 
   return (
-    <section id="extracurricular" className="py-20 px-6 bg-gray-50 dark:bg-black/30">
+    <section id="extracurricular" className="py-16 md:py-20 bg-gray-50 dark:bg-black/30">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gray-100 dark:bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 mb-4">
             <Users className="text-purple-400" size={20} />
             <span className="text-gray-800 dark:text-white font-medium">Extracurricular</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             Clubs & Activities
           </h2>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">

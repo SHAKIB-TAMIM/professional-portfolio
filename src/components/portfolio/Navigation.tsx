@@ -45,6 +45,14 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, []);
+
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -117,21 +125,24 @@ const Navigation = () => {
         </div>
 
         {isOpen && (
-          <div className="lg:hidden mt-4 pb-4 space-y-1">
-            {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className={`block w-full text-left py-2 transition-colors duration-200 text-sm ${
-                  isDark
-                    ? "text-white hover:text-purple-300"
-                    : "text-gray-700 hover:text-purple-600"
-                }`}
-              >
-                {item.name}
-              </button>
-            ))}
-          </div>
+          <>
+            <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
+            <div className="relative z-50 lg:hidden mt-4 pb-4 space-y-1 rounded-2xl p-4 bg-white/90 dark:bg-black/90 backdrop-blur-md border border-gray-200 dark:border-white/10">
+              {navItems.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={() => scrollToSection(item.href)}
+                  className={`block w-full text-left py-3 px-4 rounded-lg transition-colors duration-200 text-sm ${
+                    isDark
+                      ? "text-white hover:bg-white/10 hover:text-purple-300"
+                      : "text-gray-700 hover:bg-gray-100 hover:text-purple-600"
+                  }`}
+                >
+                  {item.name}
+                </button>
+              ))}
+            </div>
+          </>
         )}
       </div>
     </nav>

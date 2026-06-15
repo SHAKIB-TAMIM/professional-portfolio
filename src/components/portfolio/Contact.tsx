@@ -77,14 +77,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-gray-50 dark:bg-black/30">
+    <section id="contact" className="py-16 md:py-20 bg-gray-50 dark:bg-black/30">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gray-100 dark:bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 mb-4">
             <Mail className="text-purple-400" size={20} />
             <span className="text-gray-800 dark:text-white font-medium">Contact</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             Let's Work Together
           </h2>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
@@ -92,8 +92,8 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <div className="bg-white shadow-lg border border-gray-200 rounded-2xl p-8 dark:bg-white/10 dark:shadow-none dark:border-white/20 dark:backdrop-blur-sm">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+          <div className="bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 dark:bg-white/10 dark:shadow-none dark:border-white/20 dark:backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send me a message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -147,7 +147,7 @@ const Contact = () => {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-white shadow-lg border border-gray-200 rounded-2xl p-8 dark:bg-white/10 dark:shadow-none dark:border-white/20 dark:backdrop-blur-sm">
+            <div className="bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 dark:bg-white/10 dark:shadow-none dark:border-white/20 dark:backdrop-blur-sm">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -174,9 +174,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-white shadow-lg border border-gray-200 rounded-2xl p-8 dark:bg-white/10 dark:shadow-none dark:border-white/20 dark:backdrop-blur-sm">
+            <div className="bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 dark:bg-white/10 dark:shadow-none dark:border-white/20 dark:backdrop-blur-sm">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Follow me</h3>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {socialLinks.map((social) => (
                   <a
                     key={social.name}

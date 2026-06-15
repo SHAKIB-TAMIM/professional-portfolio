@@ -9,70 +9,70 @@ const Achievements = () => {
       organization: "Baiust Computer Club",
       date: "2023",
       description: "Certified for participating in Baiust Junior IUPC-2023.",
-      image:"iupc.jpg"
+      image:"images/iupc.jpg"
     },
     {
       title: "DevFest AI Hackathon",
       organization: "Google Developer Group-Sonargaon",
       date: "December-11 2023",
       description: "Certified for participating in DevFest AI Hackathon 2023 organized by GDG Sonargaon.",
-      image:"devfest.jpg"
+      image:"images/devfest.jpg"
     },
     {
       title: "Cython Codecraft",
       organization: "bongo DEV",
       date: "December 2024",
       description: "Certified for completing the Data Structure & Algorithm with C++ and Python BOOTCAMP.",
-      image:"cython.png"
+      image:"images/cython.png"
     },
     {
       title: "WEB Development Certification",
       organization: "bongo DEV",
       date: "August 2024",
       description: "Certified for completing the WEB Development BOOTCAMP.",
-      image:"web.png"
+      image:"images/web.png"
     },
     {
       title: "Mobile App Development (Flutter)",
       organization: "EDGE, ICT Division, Bangladesh",
       date: "17 April 2025",
       description: "Certified for completing Mobile App Development (Android/Flutter/iOS) training conducted by Dept of CSE, CUET from Aug 2024 to Jan 2025.",
-      image:"edge.jpg"
+      image:"images/edge.jpg"
     },
     {
       title: "Hackathon - CSE FEST 2025",
       organization: "Computer Club, BAIUST",
       date: "5-6 May 2025",
       description: "Participated in 48-hour hackathon as leader of 'Team Hactastick Four' at BAIUST CSE FEST-2025. Certified for creating a sustainable technology solution.",
-      image: "hackathon1.jpg"
+      image: "images/hackathon1.jpg"
     },
     {
       title: "Hackathon - CSE FALL FEST 2025",
       organization: "Computer Club, BAIUST",
       date: "3-5 November 2025",
       description: "Participated in 48-hour hackathon as leader of 'Team Hactastick Four' at BAIUST CSE FALL FEST-2025.",
-      image: "hackathon2.jpg"
+      image: "images/hackathon2.jpg"
     },
     {
       title: "Software Internship (PM)",
       organization: "Computer Club, BAIUST",
       date: "July-2025 to December-2025",
       description: "Completed 6-Month Software Engineering Internship Program as Project Manager.",
-      image: "InternBCC.jpg"
+      image: "images/InternBCC.jpg"
     },
     {
       title: "Best Poster Award Fall 2025",
       organization: "Poster Presentation Committee",
       date: "8 December 2025",
       description: "Best Poster Award in Poster Presentation Competition: Fall 2025 at BAIUST. Poster titled 'Adaptive CCTV Compression System Using Dynamic Region of Interest (ROI) Control'.",
-      image: "poster.jpg"
+      image: "images/poster.jpg"
     },
     {
       title: "Python-Django Instructor",
       organization: "BAIUST Computer Club",
       date: "2026",
       description: "Python-Django Instructor certification from BAIUST Computer Club.",
-      image: "instructor.jpg"
+      image: "images/instructor.jpg"
     }
   ];
 

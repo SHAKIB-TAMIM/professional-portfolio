@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { Download } from "lucide-react";
+import { Download, Github, Globe, Linkedin } from "lucide-react";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,9 +20,6 @@ const Hero = () => {
               MD. Shakibul Islam Tamim
               </span>
             </h1>
-            <h2 className="text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-6">
-              Full Stack Software Developer
-            </h2>
             <p className="text-lg text-gray-500 dark:text-gray-400 mb-8 leading-relaxed">
               Computer Science student passionate about building real-world software, solving problems, and creating meaningful applications. I enjoy turning ideas into impactful digital experiences.
             </p>
@@ -47,6 +44,35 @@ const Hero = () => {
               >
                 <Download size={18} />
                 See Resume
+              </a>
+            </div>
+            <div className="flex gap-3">
+              <a
+                href="https://www.linkedin.com/in/shakibul-islam-256515336?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="p-2.5 rounded-full bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 hover:bg-purple-500 hover:text-white transition-all duration-300"
+              >
+                <Linkedin size={20} />
+              </a>
+              <a
+                href="https://github.com/SHAKIB-TAMIM"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="p-2.5 rounded-full bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 hover:bg-purple-500 hover:text-white transition-all duration-300"
+              >
+                <Github size={20} />
+              </a>
+              <a
+                href="https://tamim-professional-portfolio.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Portfolio"
+                className="p-2.5 rounded-full bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 hover:bg-purple-500 hover:text-white transition-all duration-300"
+              >
+                <Globe size={20} />
               </a>
             </div>
           </div>
